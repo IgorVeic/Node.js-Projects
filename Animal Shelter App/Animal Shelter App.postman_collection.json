@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "a22ea4ae-c624-40d4-b343-8656884e53a3",
+		"name": "Animal Shelter App Workshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33333089"
+	},
+	"item": [
+		{
+			"name": "Animals",
+			"item": [
+				{
+					"name": "Get All Animals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/animals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"animals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Animal By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/animals/660d87c8f077825227e2bf3e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"animals",
+								"660d87c8f077825227e2bf3e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Animal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Dylan\",\r\n    \"type\": \"Dog\",\r\n    \"breed\": \"Retriever\",\r\n    \"age\": 6,\r\n    \"status\": \"Adopted\",\r\n    \"description\": \"Hello Dylan!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/animals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"animals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Animal",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Bambozo\",\r\n    \"type\": \"Dog\",\r\n    \"breed\": \"German Sheppard\",\r\n    \"age\": 5,\r\n    \"status\": \"Adopted\",\r\n    \"description\": \"Cute German Sheppard!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/animals/660d9fe093ed036bef87b506",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"animals",
+								"660d9fe093ed036bef87b506"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Animal",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/animals/660d9aa95c11cf8de4b6c092",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"animals",
+								"660d9aa95c11cf8de4b6c092"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Adoptions",
+			"item": [
+				{
+					"name": "Get All Adoptions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/adoptions/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"adoptions",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Adoption",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"adopterName\": \"Mike Tyson\",\r\n\t\t\"email\": \"ironmike@example.com\",\r\n        \"animal\":\"660da1b75cc04df0bc5f2c92\",\r\n        \"adoptionDate\": \"2022-06-03\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/adoptions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"adoptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Adoption",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"adopterName\": \"Mike Tyson\",\r\n\t\t\"email\": \"ironmike@example.com\",\r\n        \"animal\":\"660da1b75cc04df0bc5f2c92\",\r\n        \"adoptionDate\": \"2022-06-03\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/adoptions/660d9ecd93ed036bef87b4f5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"adoptions",
+								"660d9ecd93ed036bef87b4f5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
