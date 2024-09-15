@@ -1,0 +1,81 @@
+[
+  {
+    "title": "Detroit",
+    "content": "Pistons",
+    "id": "7a7db43b-3b2b-4ed2-b493-59aa3c7aeb1a",
+    "createdBy": "ivokostovski@gmail.com",
+    "createdAt": "2024-03-19T11:21:55.634Z",
+    "updatedAt": "2024-03-19T11:21:55.634Z",
+    "likes": []
+  },
+  {
+    "title": "Los Angeles",
+    "content": "Lakers",
+    "id": "d6b0c1a5-1ee8-4f12-a9f8-ecf9b5f509ec",
+    "createdBy": "filipmladenovski@gmail.com",
+    "createdAt": "2024-03-21T09:45:00.000Z",
+    "updatedAt": "2024-03-19T11:21:55.634Z",
+    "likes": [
+      "ivokostovski@gmail.com"
+    ]
+  },
+  {
+    "title": "Phoenix",
+    "content": "Suns",
+    "id": "b8d6b2f4-768e-4979-9344-aa1be2cc95e2",
+    "createdBy": "ivokostovski@gmail.com",
+    "createdAt": "2024-03-22T10:00:00.000Z",
+    "updatedAt": "2024-03-19T11:21:55.634Z",
+    "likes": [
+      "igorveic@gmail.com",
+      "filipmladenovski@gmail.com",
+      "ivacvetkovska@gmail.com"
+    ]
+  },
+  {
+    "title": "Toronto",
+    "content": "Raptos",
+    "createdBy": "ivokostovski@gmail.com",
+    "id": "a9526bc1-2358-45b1-803d-9560e9d2f532",
+    "createdAt": "2024-03-22T21:19:33.836Z",
+    "likes": [
+      "igorveic@gmail.com"
+    ]
+  },
+  {
+    "title": "Los Angeles",
+    "content": "Clippers",
+    "id": "a08542ab-b178-4c7a-ac8c-7fe2099188e8",
+    "createdBy": "bobbobsky@gmail.com",
+    "createdAt": "2024-03-23T10:44:29.582Z",
+    "likes": [
+      "igorveic@gmail.com"
+    ]
+  },
+  {
+    "title": "Cleveland",
+    "content": "Cavaliers",
+    "id": "f99d2bb7-2b66-4a3a-9873-24d1942a66e3",
+    "createdBy": "igorveic@gmail.com",
+    "createdAt": "2024-03-23T19:00:43.934Z",
+    "likes": []
+  },
+  {
+    "title": "San Antonio",
+    "content": "Spurs",
+    "id": "e02b6201-3ff3-4f4c-9915-caaaa91afca2",
+    "createdBy": "igorveic@gmail.com",
+    "createdAt": "2024-03-23T19:01:16.981Z",
+    "likes": [
+      "ivokostovski@gmail.com"
+    ]
+  },
+  {
+    "title": "Denver",
+    "content": "Nuggets",
+    "id": "030e6d96-f296-4676-8821-71451d1dc6c7",
+    "createdBy": "ivacvetkovska@gmail.com",
+    "createdAt": "2024-03-23T20:31:25.258Z",
+    "likes": []
+  }
+]

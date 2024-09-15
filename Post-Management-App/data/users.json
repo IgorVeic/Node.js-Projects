@@ -1,0 +1,30 @@
+[
+  {
+    "id": "d466e712-5c8d-499c-8416-b7a00e926444",
+    "name": "Igor Veic",
+    "username": "igorveic@gmail.com",
+    "password": "$2b$10$FYR0K0mVnE62TJ5PwVeY1OxMk85TmCUQjEHC217lepfLusf/XJiD2",
+    "createdAt": "2024-03-23T10:46:43.740Z"
+  },
+  {
+    "id": "55ac6e3e-3bea-49bf-ba8f-963b648c025c",
+    "name": "Ivo Kostovski",
+    "username": "ivokostovski@gmail.com",
+    "password": "$2b$10$R5GBKSgSYjhFr.mljx8jWu0BXcjNmC5zilsVTnq.KvNnUkHJeRg1W",
+    "createdAt": "2024-03-23T18:57:47.774Z"
+  },
+  {
+    "id": "8a7dfa17-b309-4c41-b6fe-3a8a6c561436",
+    "name": "Filip Mladenovski",
+    "username": "filipmladenovski@gmail.com",
+    "password": "$2b$10$MHbYOXDFekX0zuGiyATqGeUEX5k7z6XC7t1tC5lJ/clnm9qtPPtAm",
+    "createdAt": "2024-03-23T18:58:43.238Z"
+  },
+  {
+    "id": "7677026f-96ec-4351-a6ee-6741a4736634",
+    "name": "Iva Cvetkovska",
+    "username": "ivacvetkovska@gmail.com",
+    "password": "$2b$10$QNe93D4SYiGLV.g9yCKE1OSMFa84PsOV4scHOq2/TQXnu386iWh.y",
+    "createdAt": "2024-03-23T20:30:42.687Z"
+  }
+]

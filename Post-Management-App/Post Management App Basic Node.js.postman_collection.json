@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "0ebdae04-1137-46ce-a053-a60221895d2c",
+		"name": "Homework_4 Basic Node.js",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33333089"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Iva Cvetkovska\",\r\n    \"username\": \"ivacvetkovska@gmail.com\",\r\n    \"password\": \"pass123\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/auth/register"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"ivacvetkovska@gmail.com\",\r\n    \"password\": \"pass123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/auth/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/auth/logout"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "Get All Posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/api/posts"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Posts By User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/api/posts/igorveic@gmail.com"
+					},
+					"response": []
+				},
+				{
+					"name": "Create New Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Denver\",\r\n    \"content\": \"Nuggets\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/posts/"
+					},
+					"response": []
+				},
+				{
+					"name": "Update user post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"title\": \"Portland\",\r\n    \"content\": \"blejzers\",\r\n    \"id\": \"58b44ce7-a6a1-4b30-87eb-f2cc80dd5afe\",\r\n    \"createdBy\": \"igorveic@gmail.com\",\r\n    \"createdAt\": \"2024-03-23T11:01:28.295Z\",\r\n    \"likes\": [],\r\n    \"updatedAt\": \"2024-03-23T11:04:47.251Z\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/posts/58b44ce7-a6a1-4b30-87eb-f2cc80dd5afe"
+					},
+					"response": []
+				},
+				{
+					"name": "Like / unlike a post",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"title\": \"Portland\",\r\n    \"content\": \"blejzers\",\r\n    \"id\": \"58b44ce7-a6a1-4b30-87eb-f2cc80dd5afe\",\r\n    \"createdBy\": \"igorveic@gmail.com\",\r\n    \"createdAt\": \"2024-03-23T11:01:28.295Z\",\r\n    \"likes\": [],\r\n    \"updatedAt\": \"2024-03-23T11:04:47.251Z\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/posts/like/b8d6b2f4-768e-4979-9344-aa1be2cc95e2"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete A Post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"title\": \"Portland\",\r\n    \"content\": \"blejzers\",\r\n    \"id\": \"58b44ce7-a6a1-4b30-87eb-f2cc80dd5afe\",\r\n    \"createdBy\": \"igorveic@gmail.com\",\r\n    \"createdAt\": \"2024-03-23T11:01:28.295Z\",\r\n    \"likes\": [],\r\n    \"updatedAt\": \"2024-03-23T11:04:47.251Z\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/posts/b8d6b2f4-768e-4979-9344-aa1be2cc95e2"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete All User Posts",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"title\": \"Portland\",\r\n    \"content\": \"blejzers\",\r\n    \"id\": \"58b44ce7-a6a1-4b30-87eb-f2cc80dd5afe\",\r\n    \"createdBy\": \"igorveic@gmail.com\",\r\n    \"createdAt\": \"2024-03-23T11:01:28.295Z\",\r\n    \"likes\": [],\r\n    \"updatedAt\": \"2024-03-23T11:04:47.251Z\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/posts/user/filipmladenovski@gmail.com"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
